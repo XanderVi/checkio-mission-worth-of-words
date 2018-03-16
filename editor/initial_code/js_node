@@ -1,0 +1,15 @@
+"use strict";
+
+function worthOfWords(words) {
+    // your code here
+    return word;
+}
+
+var assert = require('assert');
+if (!global.is_checking) {
+
+    // These "asserts" are used for self-checking and not for an auto-testing
+    assert.equal(worthOfWords(['hi', 'quiz', 'bomb', 'president']), 'quiz')
+    assert.equal(worthOfWords(['zero', 'one', 'two', 'three', 'four', 'five']), 'zero')
+    console.log("Coding complete? Click 'Check' to earn cool rewards!");
+}

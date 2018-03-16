@@ -1,0 +1,62 @@
+<!-- Describe task in general -->
+
+<p>
+    Hey, are you ready for some game party in Scrabble?<br>    
+    You have a list of words and you have to find only one - the most valuable of them.<br>
+    Rules:<br>
+    Each word have a worth that equivalent a sum of letters which it consists of.<br>
+    The values of letters are:<br>
+    e, a, i, o, n, r, t, l, s, u = 1<br>
+    d, g = 2<br>
+    b, c, m, p = 3<br>
+    f, h, v, w, y = 4<br>
+    k = 5<br>
+    j, x = 8<br>
+    q, z = 10<br>
+    For example, the worth of 'dog' is 5, because 'd' = 2, 'o' = 1 and 'g' = 2.
+</p>
+
+<!--
+<p style="text-align: center;">
+    <img  title="Worth of words" src="{{MEDIA}}example.jpg" alt="example" style="max-height: 283px"/>
+</p>
+-->
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> List of words
+</p>
+
+<p>
+    <strong>Output: </strong> The most valuable word
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Example:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">worthOfWords(['hi', 'quiz', 'bomb', 'president']) == 'quiz'
+worthOfWords(['zero', 'one', 'two', 'three', 'four', 'five']) == 'zero'</pre>
+{% else %}
+<pre class="brush: python">worth_of_words(['hi', 'quiz', 'bomb', 'president']) == 'quiz'
+worth_of_words(['zero', 'one', 'two', 'three', 'four', 'five']) == 'zero'</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    For lexicographical analysis of a texts.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Precondition</strong>:<br>
+    2 <= words <= 10<br>
+    Real words only<br>
+    lowercase letters only
+</p>
