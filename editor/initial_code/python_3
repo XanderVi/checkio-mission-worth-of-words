@@ -3,6 +3,10 @@ def worth_of_words(words):
     return words
 
 if __name__ == '__main__':
+    print("Example:")
+    print(worth_of_words(['hi', 'quiz', 'bomb', 'president']))
+
     #These "asserts" using only for self-checking and not necessary for auto-testing
     assert worth_of_words(['hi', 'quiz', 'bomb', 'president']) == 'quiz'
     assert worth_of_words(['zero', 'one', 'two', 'three', 'four', 'five']) == 'zero'
+    print("Coding complete? Click 'Check' to earn cool rewards!")
