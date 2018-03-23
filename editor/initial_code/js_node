@@ -2,11 +2,13 @@
 
 function worthOfWords(words) {
     // your code here
-    return word;
+    return words;
 }
 
 var assert = require('assert');
 if (!global.is_checking) {
+    console.log('Example:')
+    console.log(worthOfWords(['hi', 'quiz', 'bomb', 'president']))
 
     // These "asserts" are used for self-checking and not for an auto-testing
     assert.equal(worthOfWords(['hi', 'quiz', 'bomb', 'president']), 'quiz')
